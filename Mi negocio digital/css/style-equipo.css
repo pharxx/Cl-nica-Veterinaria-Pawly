@@ -1,0 +1,85 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 60px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.8rem;
+    color: #2c3e50;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Rejilla de 6 integrantes */
+.team-grid {
+    display: grid;
+    /* Crea columnas de al menos 300px que llenan el espacio */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+/* Diseño de la Tarjeta */
+.team-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.team-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Círculo de la imagen */
+.image-wrapper img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 5px solid #007bff; /* Color de acento */
+    padding: 5px;
+    background: #fff;
+}
+
+/* Textos informativos */
+.info h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 5px;
+}
+
+.info span {
+    display: block;
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.info p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
