@@ -1,0 +1,2307 @@
+:root{
+    --color-amarillo:#FFB838;    
+    --color-naranja:#ff9d1c;
+    --celeste-claro:#57aae6;
+    --celeste-oscuro:#19374e;
+    --negro:#010B13;
+    --blanco:#F7F6EE;
+    --gris:#D9D9D9;
+    --gris-oscuro:#3d414dc4;
+}
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background-color: var(--blanco) !important;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 90px;
+}
+
+/* Seccion inicio */
+
+.bg-image{
+  background-image: url(../img/tamas-pap-Qdt8f7Tcle0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-position:center center;
+  background-size: cover;
+}
+.quienes-somos-informacion{
+  color: var(--blanco);
+    display: flex;
+    width: auto;
+    height: 600px;
+    justify-content: space-between;
+    padding-left: 3rem;
+    align-items: center;
+    
+}
+
+.logo-grande-inicio img{
+    width: 280px;
+    height: 280px;
+    opacity: 0.9
+  }
+.texto-contenedor{
+    width: 50%;
+    height: 100%;
+    display: grid;
+  background-color: rgb( 0 0 0/ 0.6);
+    justify-content:end;
+    align-items: center;
+    text-align: end;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+.texto-contenedor h2{
+    font-size: 50px;
+    margin-right: 2rem;
+
+}
+
+.text-description{
+  display: block;
+  width: 500px;
+  margin: 2rem;
+}
+
+.titulo{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    margin: 0px;
+    gap: 3px;
+    text-align: end;
+}
+
+.texto-celeste{
+    color: var(--celeste-claro) !important;
+}
+
+.bg-celeste{
+  background-color: var(--celeste-claro) !important;
+}
+
+.texto-c-oscuro{
+  color: var(--celeste-oscuro);
+}
+
+.texto-amarillo{
+  color: var(--color-amarillo) !important;
+}
+
+.texto-blanco{
+  color: var(--blanco) !important;
+}
+.navbar-container-info{
+    display: flex;
+    width: 80% !important;
+    height: 70px;
+    justify-content: space-evenly !important;
+    gap: 13rem !important;
+    background-color: var(--celeste-oscuro);
+    position: sticky !important;
+} 
+.navbar-container-info a{
+    color: var(--blanco) !important;
+    font-size: 1.3rem;
+    transition: 0.3s !important;
+}
+.text-navbar{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem !important;
+}
+.text-navbar:hover{
+    color: var(--color-amarillo) !important;
+    font-size: 1.4rem !important;
+}
+.tittle-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--blanco);
+}
+.tittle-logo img{
+    width: 50px;
+    height: 50px;
+}
+.dropdown-menu a{
+    color: var(--celeste-oscuro) !important;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--celeste);
+  padding: 10px 20px;
+  position: relative;
+}
+
+#Carousel {
+  display: flex ;
+  justify-self: center !important;
+  width: 70%;
+  height: 500px;
+  margin: 3rem;
+}
+
+.carousel-caption{
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+  background-color: rgb(30, 30, 30 / 20%);
+  backdrop-filter: blur(10px);
+  color: var(--negro) !important;
+}
+
+#somos-mejores {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.card-contact{
+  display: flex;
+  margin-top: 2rem;
+  height: 510px;
+}
+
+#mision-vision{
+  margin: 0rem 0rem;
+  display: flex;
+}
+.mv-card{
+  padding: 1rem;
+  height: 550px;
+  background-position: center center;
+  background-size: cover;
+  display: grid;
+  align-items: end;
+}
+.overlay{
+  padding:1rem;
+  background-color: rgb( 0 0 0/ 0.6);
+  color: var(--color-amarillo);
+  border-radius: 10px;
+}
+
+.overlay p{
+  color: var(--blanco);
+  font-size: 20px;
+}
+
+.tittle-out{
+  background-color: var(--color-amarillo);
+  color: var(--celeste-oscuro);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0rem;
+}
+.mision{
+  background-image: url(../img/62356B50-5F45-4D44-BA33-C4541F288B84\ Copy.JPG);
+}
+.vision{
+  background-image: url(../img/alexander-mass-qCxIwH6mkWw-unsplash.jpg);
+}
+
+.que-ofrecemos{
+  width: 90%;
+  height: 500px;
+  display: flex;
+  border-radius: 10px;
+  padding: 5rem;
+  margin-bottom: 5rem;
+  justify-content: space-around;
+  gap: 4rem;
+  align-items: center;
+  justify-self: center;
+}
+
+.q-o-i, .q-o-i img{
+  width: 450px;
+  height: 450px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.q-o-t{
+  display: flex;
+  flex-direction: column;
+}
+.q-o-t h2{
+  font-size: 50px;
+}
+.q-o-t p{
+  font-size: 30px;
+}
+.q-o-t a{
+  font-size: 20px;
+}
+
+
+/*servicios*/
+
+.card-container-ns{
+  background-image: url('../img/alexander-mass--NJvNctChC8-unsplash.jpg');
+  background-size: cover;
+  background-position: top center;
+  width: 100%;
+  height: 850px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.logo-card-ns{
+  display:flex;
+  justify-content: center;
+  justify-self: center;
+  background-color: var(--celeste-oscuro);
+  box-shadow: 0 4px 30px rgba(204, 222, 255, 0.37);
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+
+}
+.logo-card-ns img{
+  width: 90px;
+  align-self: center;
+}
+
+.card-ns{
+    background: rgba(30, 30, 30 /20%);
+    backdrop-filter: blur(10px);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.37);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    height:380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    justify-self: center;
+    align-items: center;
+}
+.txt-ns{
+  height: 60%;
+  display: grid; 
+  text-align: end;
+}
+.txt-ns h2, .txt-ns p{
+  color: var(--blanco);
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: bold;
+  justify-content: center;
+  text-align: center;
+  align-self: end;
+  margin-bottom: 0;
+}
+.descuento{
+  margin: 4rem;
+}
+
+/*Sección Documentación*/
+
+
+/* =========================
+ANIMACION MENU
+========================= */
+
+@keyframes aparecer{
+
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('../img/360_F_310998841_dhTHUjjR0YUdf1DH3JAwVCET4fFtYF02.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color: var(--blanco);
+
+    padding:20px;
+}
+
+.contenido{
+    animation:entrada 1s ease;
+}
+
+.contenido h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.contenido p{
+    font-size:22px;
+    margin-bottom:35px;
+}
+
+/* =========================
+BOTONES
+========================= */
+
+.btn,
+.card a,
+.volver{
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:14px 30px;
+
+    border-radius:12px;
+
+    transition:0.3s ease;
+
+    font-weight:bold;
+}
+
+/* BOTON PRINCIPAL */
+
+/* .btn{
+    background:#38bdf8;
+    color:white;
+}
+
+.btn:hover{
+    transform:translateY(-5px) scale(1.05);
+    background:#0ea5e9;
+
+    box-shadow:0 10px 20px rgba(56,189,248,0.4);
+} */
+
+/* =========================
+CARDS
+========================= */
+.logo-pequeño img{
+  width: 80px;
+  height: 80px;
+  display: block;
+  justify-content: center;
+  justify-self: center;
+}
+
+.cards{
+    width:90%;
+    margin:auto;
+
+    margin-top:-100px;
+
+    display:flex;
+    justify-content:center !important;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+
+    width:320px;
+
+    padding:35px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    transition:0.4s;
+
+    animation:entrada 1s ease;
+}
+
+.card:hover{
+    transform:translateY(-15px);
+}
+
+.card i{
+    font-size:50px;
+    color:#2563eb;
+
+    margin-bottom:20px;
+}
+
+.card h2{
+    margin-bottom:15px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.card a{
+    background-color: var(--negro);
+    color:white;
+}
+
+.card a:hover{
+    background-color: var(--celeste-claro);
+    transform:scale(1.05);
+}
+
+/* =========================
+PAGINAS INTERNAS
+========================= */
+
+.pagina{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+}
+
+.contenido-pagina{
+    background:white;
+
+    width:750px;
+
+    padding:50px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+    animation:entrada 0.8s ease;
+}
+
+.icon-page{
+    font-size:60px;
+    color:#2563eb;
+
+    margin-bottom:20px;
+}
+
+.contenido-pagina h1{
+    margin-bottom:20px;
+}
+
+.contenido-pagina p{
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.contenido-pagina ul{
+    padding-left:20px;
+    margin-bottom:30px;
+}
+
+.contenido-pagina ul li{
+    margin-bottom:12px;
+}
+
+/* =========================
+BOTON VOLVER
+========================= */
+
+.volver{
+    background-color:var(--color-amarillo);
+    color:white;
+}
+
+.volver:hover{
+    background-color: var(--color-naranja);
+    transform:translateX(-5px);
+}
+
+/* =========================
+ANIMACION GENERAL
+========================= */
+
+@keyframes entrada{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+.tabla-atributos{
+  width: 90%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+
+}
+.tabla{
+  width: 90%;
+  border: solid 0.5px var(--gris);
+  border-radius: 50px !important;
+  display: flexbox;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+}
+.texto-gris-oscuro{
+  color: var(--gris-oscuro);
+}
+.fondo-gris{
+  background-color: var(--gris) !important;
+}
+
+.fondo-tp{
+  background-color: transparent !important;
+}
+
+.encabezados-tabla{
+  background-color: var(--celeste-claro);
+
+  
+}
+
+.celdas td{
+  padding:0.7rem 1.5rem;
+  border-left: 1.5px solid var(--gris);
+
+}
+
+/*Seccion database tablas SQL*/
+
+.encabezado{
+  border: 3px solid var(--gris);
+}
+.code-queries td{
+  font-family: tahoma;
+  border: 1.5px solid var(--gris);
+  padding: 5px;
+}
+
+.lb td{
+  border: 1.5px solid var(--blanco) !important;
+}
+
+.titulo-redondeado-arriba{
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+  text-align: center;
+  background-color: var(--celeste-claro);
+  border:0 solid;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 7px;
+  width: 100%;
+}
+#Consultas, #resultados-tablas, #pseudocodigo, .diagrama{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  display: flexbox;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem 2rem 2rem 2rem;
+  padding: 0 0 2rem 0;
+}
+
+.diagrama{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+}
+.diagrama p{
+  display: block;
+  width:700px ;
+  color: var(--gris-oscuro);
+  font-weight: 500;
+  justify-self: center;
+  text-align: center;
+}
+
+.queries{
+  margin: 2rem 4rem;
+}
+
+.queries p{
+  font-size: 20px;
+}
+.queries h3{
+  padding: 3rem 0 1rem 0;
+}
+
+.queries h4{
+  padding: 1.5rem;
+}
+
+.queries pre{
+  background-color: var(--negro) !important;
+  box-shadow: 5px 10px 10px var(--gris-oscuro);
+  border-left: 8px solid var(--celeste-oscuro);
+
+}
+
+.queries table{
+  justify-self: center;
+}
+
+.nota-al-pie{
+  margin: 1.5rem;
+  background-color: #c5e6fd97;
+  padding: 1rem;
+  border-left: 7px solid var(--celeste-oscuro);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  align-items: center;
+}
+.nota-al-pie p{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+/*Pseudocódigo*/
+.pseint-titulo{
+  color: var(--blanco);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.pseudocodigo{
+  display: grid;
+  justify-content: center;
+  align-items: center ;
+}
+.pseudocodigo h1{
+  color: var(--color-amarillo);
+  padding: 2rem 0rem;
+  text-align: center;
+}
+.pseudocodigo p{
+  font-size: 25px;
+  color: var(--gris-oscuro);
+}
+.pseudocodigo pre{
+  background-color: var(--negro) !important;
+}
+.diagrama-flujo{
+  width: 950px;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid var(--gris);
+  margin: 2rem;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.diagrama-flujo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: scale(1);
+  transition: transform .3s ease;
+}
+
+.adv{
+  background-color: #ffe3b0;
+  width: 600px;
+  font-size: 25px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0.7rem;
+  gap: 1rem;
+  border-left: solid 5px var(--color-naranja);
+}
+.adv img{
+  width: 30px;
+  justify-self: center;
+  align-self: center;
+}
+
+/*Parte de Tecnologías web*/
+#Tecnologías{
+  background-color: var(--gris);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.secciones-tec{
+  background-color: var(--blanco);
+  border-radius: 10px;
+  width: 800px;
+  display: grid;
+  grid-template-columns: 6, 1fr;
+  margin: 2rem;
+  padding: 3rem;
+  gap: 2rem;
+}
+
+.secciones-tec h3{
+  justify-self: center;
+  font-size: 40px;
+}
+
+.tec {
+ width: 250px;
+ height: 280px;
+ margin: 0 auto;
+ padding: 1rem;
+ background-color: #011522;
+ border-radius: 8px;
+ z-index: 1;
+}
+
+.tools {
+ display: flex;
+ align-items: center;
+ padding: 9px;
+}
+
+.circle {
+ padding: 0 4px;
+}
+
+.box {
+ display: inline-block;
+ align-items: center;
+ width: 10px;
+ height: 10px;
+ padding: 1px;
+ border-radius: 50%;
+}
+
+.red {
+ background-color: #ff605c;
+}
+
+.yellow {
+ background-color: #ffbd44;
+}
+
+.green {
+ background-color: #00ca4e;
+}
+
+.card__content{
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card__content i, .card__content img{
+  margin: 0.5rem;
+  align-self:first baseline;
+  justify-self: center;
+}
+
+.card__content img{
+  margin: 0 !important;
+}
+
+/*Seccion Nuestro Equipo*/
+#equipo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+
+.integrantes{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap:6rem 3rem;
+  padding: 3rem;
+
+}
+
+.card-integrante {
+  width: 300px;
+  height: 350px;
+  position: relative;
+  background: #f5f5f5;
+  color: #252525;
+  border-radius: 4px;
+  overflow: hidden;
+  line-height: 150%;
+  box-shadow: 0px 10px 20px rgba(80, 80, 80, 0.2);
+  transition: box-shadow .3s ease-in-out;
+}
+
+.card-info {
+  background-color: var(--gris);
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  display: grid;
+  align-items: end;
+}
+
+/* Image */
+.card-img {
+  background: var(--blanco);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: transform .3s ease-in-out;
+  z-index: 2;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  gap: 0 !important;
+}
+
+.card-img img{
+  height: 150px;
+  width: 150px;
+  border: 4px solid var(--celeste-claro);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+/* Texts */
+.title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-integrante p{
+  margin: 0 !important;
+  font-size: 20px;
+}
+
+.card-integrante h3{
+  margin: 0 !important;
+}
+/* Hovers */
+.card-integrante:hover {
+  box-shadow: 0px 15px 30px rgba(80, 80, 80, 0.3);
+}
+
+.card-integrante:hover .card-img {
+  transform: translateY(-11em);
+}
+
+.card-integrante:nth-child(1),
+.card-integrante:nth-child(2),
+ .card-integrante:nth-child(3){
+  grid-column: span 2;
+}
+
+.card-integrante:nth-child(4), .card-integrante:nth-child(5){
+  grid-column: span 3;
+  max-width: 65%;
+  justify-self: center;
+  width: 100%;
+}
+
+/* Contacto - Sección  */
+
+.contact-info-left{
+  background-image: url("../img/anuby.jpeg");
+  background-size: cover;
+  background-position: center center;
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem 9rem;
+  width: 70%;
+}
+
+.contact-info-left h3{
+  font-size: 50px;
+  padding: 0.5rem 1rem;
+  border-left: solid 6px var(--color-amarillo);
+  margin: 2rem 0rem;
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  height: 50px;
+  background-color: var(--color-naranja);
+  margin-top: 3rem;
+}
+
+.contact-btn a{
+  color: var(--blanco);
+  text-decoration: none;
+}
+
+.contact-info-right{
+  background-color: var(--color-amarillo);
+  color: var(--negro);
+  width: 40%;
+  display: grid;
+  justify-content: start;
+  padding: 2rem 2rem;
+}
+
+.contact-info-right h2{
+  padding-left: 1.5rem;
+}
+
+.contact-info-right p{
+font-size: 20px;
+font-weight: 500;
+}
+
+.contact-card-info{
+  display: flex; 
+  color: var(--blanco);
+  height: 19px;
+}
+
+.contact-card-info img{
+  width: 75px;
+  height: 75px;
+}
+
+.contact-card-info span{
+  color: var(--negro);
+  font-size: 20px;
+}
+
+#social-media{
+  margin-top: 5rem;
+}
+
+.social-media-links{
+  display: flex;
+  justify-content: center;
+  background-color: var(--gris);
+  padding: 0 3rem;
+}
+
+.bg-oscuro{
+  background-color: #171717;
+}
+
+.social-media-card{
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 550px;
+  height: 550px;
+  border: solid 0px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+  background-color: var(--blanco);
+}
+
+.smc-img, .smc-img img{
+  display: flex;
+  width: 550px;
+  height: 450px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+
+}
+.smc-img img{
+  object-fit: cover;
+  object-position: top;
+}
+.smc-user{
+  width: 550px;
+  display: flex;
+  justify-content:space-between ;
+  padding: 1rem 1rem;
+  align-items: center;
+  align-self: center;
+
+}
+
+.smcu-t{
+  width: 370px;
+}
+
+.smcu-l img{
+  width: 60px;
+  height: 60px;
+}
+
+#ubicacion{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/alexander-mass-qCxIwH6mkWw-unsplash.jpg);
+  padding: 3rem;
+  gap: 4rem;
+  background-position:center center;
+  background-size:cover;
+  height: 650px;
+}
+.mapa{
+  border: solid 3px rgba(255, 255, 255, 0.2);
+}
+
+footer{
+    background-color: var(--celeste-oscuro);
+    height: 200px;
+    margin-top: 6rem;
+}
+.copyright-text{
+    display: flex;
+    color: var(--blanco);
+    align-self: center;
+    margin: 0.5rem 0rem 0.5rem 2rem;
+}
+.footer-info{
+    padding: 2rem;
+    display: flex;
+    gap: 10rem;
+}
+.footer-info h3{
+    color: var(--color-amarillo);
+}
+.footer-info a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+.footer-nav, .footer-contact{
+    display: grid;
+}
+ /*Media Queries*/
+@media(max-width:900px){
+
+    .header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .contenido h1{
+        font-size:45px;
+    }
+
+    .contenido p{
+        font-size:18px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+}
+
+/* ==========================================================
+   PAWLY – RESPONSIVE CSS
+   Breakpoints:
+     xs  < 480px   (mobile pequeño)
+     sm  480–767px (mobile grande)
+     md  768–1023px (tablet)
+     lg  1024–1279px (laptop)
+     xl  ≥1280px   (escritorio grande)
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   BASE: overflow-x global
+   ---------------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+}
+
+/* ----------------------------------------------------------
+   NAVBAR
+   ---------------------------------------------------------- */
+
+/* Tablet y abajo */
+@media (max-width: 1023px) {
+  .navbar-container-info {
+    width: 100% !important;
+    gap: 0 !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: 0 !important;
+    justify-content: space-between !important;
+  }
+
+  .navbar-secciones {
+    background-color: var(--celeste-oscuro);
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 10px 10px;
+    margin-top: 0.25rem;
+  }
+
+  .navbar-nav {
+    gap: 0.25rem;
+  }
+
+  .text-navbar {
+    font-size: 1rem !important;
+    padding: 0.5rem 0.75rem !important;
+    display: block;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+
+  .text-navbar:hover {
+    background-color: rgba(255,255,255,0.1);
+    font-size: 1rem !important;
+  }
+
+  .navbar-toggler {
+    border-color: rgba(255,255,255,0.5) !important;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .dropdown-menu {
+    background-color: var(--celeste-oscuro) !important;
+    border: 1px solid rgba(255,255,255,0.15);
+  }
+
+  .dropdown-menu a {
+    color: var(--blanco) !important;
+  }
+
+  .dropdown-menu a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: var(--color-amarillo) !important;
+  }
+
+  body {
+    padding-top: 70px;
+  }
+}
+
+/* Mobile pequeño */
+@media (max-width: 480px) {
+  .tittle-logo h1 {
+    font-size: 1.3rem;
+  }
+
+  .tittle-logo img {
+    width: 36px !important;
+    height: 36px !important;
+  }
+}
+
+/* ----------------------------------------------------------
+   SECCIÓN INICIO / HERO PRINCIPAL (quienes-somos)
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .quienes-somos-informacion {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .texto-contenedor {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 16px;
+  }
+
+  .texto-contenedor h2 {
+    font-size: 32px;
+    margin-right: 0;
+  }
+
+  .text-description {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .titulo {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo-grande-inicio img {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .texto-contenedor h2 {
+    font-size: 24px;
+  }
+
+  .texto-contenedor {
+    font-size: 14px;
+  }
+
+  .logo-grande-inicio img {
+    width: 130px;
+    height: 130px;
+  }
+}
+
+/* ----------------------------------------------------------
+   HERO (documentacion / hero section)
+   ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .hero {
+    padding: 20px 16px;
+    min-height: 60vh;
+    height: auto;
+  }
+
+  .contenido h1 {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .contenido p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido h1 {
+    font-size: 28px;
+  }
+
+  .contenido p {
+    font-size: 14px;
+  }
+}
+
+/* ----------------------------------------------------------
+   CAROUSEL
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #Carousel {
+    width: 95% !important;
+    height: 380px;
+    margin: 1.5rem auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #Carousel {
+    width: 100% !important;
+    height: 260px;
+    margin: 1rem 0;
+    border-radius: 0;
+  }
+
+  .carousel-caption {
+    padding: 0.5rem !important;
+  }
+
+  .carousel-caption h5 {
+    font-size: 0.9rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.75rem;
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------
+   MISIÓN / VISIÓN
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #mision-vision {
+    flex-direction: column;
+  }
+
+  .mv-card {
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .mv-card {
+    height: 320px;
+  }
+
+  .overlay p {
+    font-size: 16px;
+  }
+
+  .overlay h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   QUE OFRECEMOS
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .que-ofrecemos {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .q-o-i,
+  .q-o-i img {
+    width: 100%;
+    max-width: 420px;
+    height: 320px;
+  }
+
+  .q-o-t h2 {
+    font-size: 32px;
+  }
+
+  .q-o-t p {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .que-ofrecemos {
+    padding: 1.5rem 1rem;
+  }
+
+  .q-o-i,
+  .q-o-i img {
+    max-width: 100%;
+    height: 240px;
+  }
+
+  .q-o-t h2 {
+    font-size: 24px;
+  }
+
+  .q-o-t p {
+    font-size: 16px;
+  }
+
+  .q-o-t a {
+    font-size: 15px;
+  }
+}
+
+/* ----------------------------------------------------------
+   SERVICIOS (card-container-ns)
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .card-container-ns {
+    grid-template-columns: repeat(2, 1fr);
+    height: auto;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+  }
+
+  .card-ns {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    min-height: 300px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-container-ns {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  .card-ns {
+    max-width: 90%;
+    min-height: 260px;
+  }
+
+  .logo-card-ns {
+    height: 100px;
+    width: 100px;
+  }
+
+  .logo-card-ns img {
+    width: 65px;
+  }
+}
+
+/* ----------------------------------------------------------
+   SOMOS MEJORES
+   ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  #somos-mejores {
+    padding: 40px 16px;
+  }
+
+  #somos-mejores h2 {
+    font-size: 1.6rem;
+  }
+
+  #somos-mejores p {
+    font-size: 1rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   CARDS DOCUMENTACIÓN
+   ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .cards {
+    margin-top: -60px;
+    gap: 20px;
+    padding: 0 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 320px;
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cards {
+    margin-top: -40px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .card h2 {
+    font-size: 1.2rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   CONTENIDO PÁGINA INTERNA
+   ---------------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .pagina {
+    padding: 24px 16px;
+    align-items: flex-start;
+  }
+
+  .contenido-pagina {
+    width: 100%;
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contenido-pagina {
+    padding: 24px 16px;
+  }
+
+  .contenido-pagina h1 {
+    font-size: 1.5rem;
+  }
+
+  .icon-page {
+    font-size: 44px;
+  }
+}
+
+/* ----------------------------------------------------------
+   TABLA DE ATRIBUTOS / BASE DE DATOS
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .tabla-atributos {
+    width: 100%;
+    overflow-x: auto;
+    padding: 0 1rem;
+  }
+
+  .tabla {
+    width: 100%;
+    font-size: 16px;
+    min-width: 480px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tabla {
+    font-size: 13px;
+    border-radius: 12px !important;
+  }
+
+  .celdas td {
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   CONSULTAS SQL / PSEUDOCÓDIGO
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #Consultas,
+  #resultados-tablas,
+  #pseudocodigo,
+  .diagrama {
+    margin: 3rem 1rem 2rem 1rem;
+  }
+
+  .queries {
+    margin: 1.5rem 1.5rem;
+    overflow-x: auto;
+  }
+
+  .queries p {
+    font-size: 16px;
+  }
+
+  .queries h3 {
+    font-size: 1.1rem;
+    padding: 2rem 0 0.75rem;
+  }
+
+  .queries pre {
+    overflow-x: auto;
+    font-size: 13px;
+  }
+
+  .queries table {
+    min-width: 360px;
+    font-size: 13px;
+    overflow-x: auto;
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .queries {
+    margin: 1rem;
+  }
+
+  .nota-al-pie {
+    font-size: 16px;
+    margin: 1rem;
+  }
+
+  .nota-al-pie p {
+    font-size: 16px;
+  }
+
+  .adv {
+    width: 100%;
+    font-size: 16px;
+    flex-wrap: wrap;
+  }
+}
+
+/* ----------------------------------------------------------
+   DIAGRAMA ER + IMAGEN
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .diagrama {
+    padding: 1.5rem 1rem;
+  }
+
+  .diagrama p {
+    width: 100% !important;
+    font-size: 16px;
+  }
+
+  .diagrama img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* ----------------------------------------------------------
+   DIAGRAMA DE FLUJO
+   ---------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .diagrama-flujo {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 400px;
+    margin: 1.5rem 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .diagrama-flujo {
+    min-height: 300px;
+    padding: 1rem 0;
+    margin: 1rem 0;
+  }
+}
+
+/* ----------------------------------------------------------
+   PSEUDOCÓDIGO
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .pseudocodigo {
+    padding: 0 1rem;
+  }
+
+  .pseudocodigo h1 {
+    font-size: 1.6rem;
+    padding: 1.5rem 0;
+  }
+
+  .pseudocodigo p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pseudocodigo pre {
+    overflow-x: auto;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pseudocodigo p {
+    font-size: 15px;
+  }
+
+  .pseudocodigo pre {
+    font-size: 11px;
+  }
+}
+
+/* ----------------------------------------------------------
+   TECNOLOGÍAS WEB
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #Tecnologías {
+    padding: 1rem 0;
+  }
+
+  .secciones-tec {
+    width: 95%;
+    padding: 2rem 1.5rem;
+    margin: 1rem auto;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .secciones-tec h3 {
+    font-size: 28px;
+    grid-column: 1 / -1;
+  }
+
+  .tec {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    min-height: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .secciones-tec {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .secciones-tec h3 {
+    font-size: 22px;
+  }
+
+  .tec {
+    max-width: 180px;
+    padding: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .secciones-tec {
+    grid-template-columns: 1fr !important;
+  }
+
+  .tec {
+    max-width: 240px;
+    width: 100%;
+  }
+}
+
+/* ----------------------------------------------------------
+   NUESTRO EQUIPO
+   ---------------------------------------------------------- */
+
+@media (max-width: 1400px) {
+  .integrantes {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 3rem 2rem;
+  }
+
+  .card-integrante:nth-child(1),
+  .card-integrante:nth-child(2),
+  .card-integrante:nth-child(3) {
+    grid-column: span 1 !important;
+  }
+
+  .card-integrante:nth-child(4),
+  .card-integrante:nth-child(5) {
+    grid-column: span 1 !important;
+    max-width: 100%;
+    justify-self: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .integrantes {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2.5rem 1.5rem;
+    padding: 2rem;
+    width: 100%;
+  }
+
+  .card-integrante {
+    width: 100%;
+    max-width: 300px;
+    justify-self: center;
+  }
+
+  .card-integrante:nth-child(n) {
+    grid-column: span 1 !important;
+  }
+
+  /* Si hay 5 tarjetas y son número impar, centrar la última */
+  .card-integrante:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    max-width: 300px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .integrantes {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 2rem 1rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .card-integrante {
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+  }
+
+  .card-img img {
+    height: 120px;
+    width: 120px;
+  }
+
+  .card-integrante p {
+    font-size: 15px;
+  }
+
+  .card-integrante h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .integrantes {
+    grid-template-columns: 1fr !important;
+    gap: 2rem;
+    padding: 1.5rem 1.5rem;
+  }
+
+  .card-integrante {
+    max-width: 340px;
+    margin: 0 auto;
+    height: 340px;
+  }
+
+  .card-integrante:last-child:nth-child(odd) {
+    grid-column: auto !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .card-integrante {
+    max-width: 100%;
+    height: 320px;
+  }
+}
+
+/* ----------------------------------------------------------
+   CONTACTO – CARD CONTACT
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  .card-contact {
+    flex-direction: column;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .contact-info-left {
+    width: 100% !important;
+    padding: 2.5rem 2rem;
+    min-height: 320px;
+  }
+
+  .contact-info-left h3 {
+    font-size: 36px;
+  }
+
+  .contact-info-right {
+    width: 100% !important;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact-info-left {
+    padding: 2rem 1.5rem;
+  }
+
+  .contact-info-left h3 {
+    font-size: 28px;
+    margin: 1rem 0;
+  }
+
+  .contact-info-left p {
+    font-size: 15px;
+  }
+
+  .contact-info-right h2 {
+    font-size: 1.4rem;
+    padding-left: 0.5rem;
+  }
+
+  .contact-info-right p {
+    font-size: 15px;
+  }
+
+  .contact-card-info {
+    height: auto;
+    gap: 0.75rem;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+
+  .contact-card-info img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .contact-card-info span {
+    font-size: 16px;
+  }
+
+  .contact-btn {
+    width: 100%;
+    max-width: 220px;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info-left h3 {
+    font-size: 24px;
+  }
+}
+
+/* ----------------------------------------------------------
+   REDES SOCIALES
+   ---------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  .social-media-links {
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .social-media-card {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    margin: 1rem 0;
+  }
+
+  .smc-img,
+  .smc-img img {
+    width: 100%;
+    height: 320px;
+  }
+
+  .smc-user {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+  .smcu-t {
+    width: auto;
+    flex: 1;
+    padding: 0 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .social-media-card {
+    max-width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  .smc-img,
+  .smc-img img {
+    height: 240px;
+  }
+
+  .smc-user {
+    padding: 0.5rem;
+  }
+
+  .smcu-l img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+/* ----------------------------------------------------------
+   UBICACIÓN / MAPA
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #ubicacion {
+    height: auto;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .mapa {
+    width: 100%;
+  }
+
+  .mapa iframe {
+    width: 100% !important;
+    height: 360px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #ubicacion {
+    padding: 1.5rem 0.75rem;
+    gap: 1.5rem;
+  }
+
+  .mapa iframe {
+    height: 280px !important;
+  }
+}
+
+/* ----------------------------------------------------------
+   FOOTER
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  footer {
+    height: auto;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .footer-info {
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+
+  .footer-nav,
+  .footer-contact {
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-info {
+    gap: 1.5rem;
+    padding: 1.25rem;
+  }
+
+  .footer-info h3 {
+    font-size: 1rem;
+  }
+
+  .footer-info a {
+    font-size: 0.85rem;
+  }
+
+  .copyright-text {
+    font-size: 0.75rem;
+    margin: 0.5rem 1rem;
+    flex-wrap: wrap;
+    line-height: 1.5;
+  }
+}
+
+/* ----------------------------------------------------------
+   TITTLE-OUT (banners de sección)
+   ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .tittle-out h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .tittle-out {
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   DESCUENTO
+   ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .descuento {
+    margin: 2rem 1rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   IMAGEN DIAGRAMA ER (basedatos.html)
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #DiagramaER .diagrama img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+}
+
+/* ----------------------------------------------------------
+   SCROLLABLE TABLES WRAPPER
+   ---------------------------------------------------------- */
+.code-queries {
+  overflow-x: auto;
+}
+
+.code-queries table {
+  min-width: 320px;
+}
+
+@media (max-width: 767px) {
+  .code-queries td {
+    font-size: 12px;
+    padding: 4px;
+  }
+}
+
+/* ----------------------------------------------------------
+   TEXTO GRANDE en secciones (somos-mejores, etc.)
+   ---------------------------------------------------------- */
+
+@media (max-width: 1023px) {
+  #somos-mejores h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  #somos-mejores h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* ----------------------------------------------------------
+   NAVBAR – Ajuste de gap en desktop para que no desborde
+   ---------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+  .navbar-container-info {
+    gap: 4rem !important;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navbar-container-info {
+    gap: 8rem !important;
+  }
+}
+
+/* ----------------------------------------------------------
+   PANTALLAS GRANDES (≥1440px) – evitar contenido demasiado
+   estirado
+   ---------------------------------------------------------- */
+
+@media (min-width: 1440px) {
+  .card-container-ns {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .que-ofrecemos {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .integrantes {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/* =========================
+RESPONSIVE
+========================= */
+
+/* Prevent horizontal scroll on all content */
+section, div, pre, table, code {
+  max-width: 100%;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1023px) {
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 36px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-bottom: 28px;
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .team-card {
+        padding: 20px 16px;
+    }
+
+    .image-wrapper img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info h3 {
+        font-size: 1.1rem;
+    }
+
+    .info p {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .team-card {
+        padding: 24px;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .team-card:hover {
+        transform: translateY(-8px);
+    }
+}

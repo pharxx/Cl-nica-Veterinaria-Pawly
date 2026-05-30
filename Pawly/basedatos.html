@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.css">
+  
+    
+</head>
+<body>
+
+     <header> 
+        <section id="navegation-bar">
+            <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="navbar-container-info container-fluid position-relative py-2 px-4 rounded-pill">
+                <div class="tittle-logo">
+                    <img src="img/pets-hotel-symbol-with-a-dog-and-a-cat-in-a-circle-with-one-star-svgrepo-com.png" alt="">
+                    <h1>Pawly</h1>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-secciones collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="text-navbar nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-navbar nav-link active" aria-current="page" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                    <a class="text-navbar nav-link dropdown-toggle active" href="documentacion.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Documentación
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="documentacion.html">Documentación</a></li>
+                        <li><a class="dropdown-item" href="basedatos.html">Base de Datos</a></li>
+                        <li><a class="dropdown-item" href="reportes.html">Reportes</a></li>
+                        <li><a class="dropdown-item" href="web.html">Tecnologías Web</a></li>
+                    </ul>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-navbar nav-link active" aria-current="page" href="nuestro-equipo.html">Nuestro Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="text-navbar nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            </nav>
+        </section>
+     </header>
+
+    <section class="pagina">
+
+        <div class="contenido-pagina">
+
+            <i class="fa-solid fa-database icon-page"></i>
+
+            <h1>Base de Datos</h1>
+
+            <p>
+                Aquí se encuentran las tablas,
+                relaciones y consultas SQL del sistema.
+            </p>
+
+            <ul>
+                <li>Diagrama E-R</li>
+                <li>Tabla de Entidad, Atributos y Rol</li>
+                <li>Scripts</li>
+                <li>Consultas SQL</li>
+            </ul>
+
+            <a href="documentacion.html" class="volver">
+                ← Volver a Documentación
+            </a>
+
+        </div>
+
+    </section>
+
+    
+    <section id="DiagramaER"> 
+        <div class="diagrama">
+            <h2>Diagrama E-R</h2>
+            <p>Esta sección presenta el modelo entidad-relación de la base de datos desarrollada 
+            para el sistema de gestión veterinaria. En ella se representan las entidades principales
+            del sistema, sus atributos y las relaciones existentes entre cada una, permitiendo 
+            visualizar de manera estructurada cómo se organiza y conecta la información dentro de la base de datos.</p>
+            <img src="/assets/Captura de pantalla 2026-05-26 171908.png" alt="Diagrama ER exportado de MySQL">
+        </div>
+        <div class="tabla-atributos">
+            <table class="tabla">
+                <tr class="encabezados-tabla texto-blanco">
+                    <td>Entidad</td>
+                    <td>Atributos</td>
+                    <td>Rol</td>
+                </tr>
+                <tr class="celdas texto-c-oscuro">
+                    <td>Propietario</td>
+                    <td>ID, Nombre, apellido, 
+                        teléfono, correo y dirección</td>
+                    <td>Representa a las personas que llevan mascotas a la veterinaria.</td>
+                </tr>
+                <tr class="lb celdas fondo-gris texto-c-oscuro">
+                    <td>Mascota</td>
+                    <td>ID, nombre, especie, raza, 
+                         edad y propietario</td>
+                    <td>Es la entidad principal del sistema, porque casi todo gira alrededor de la mascota.</td>
+                </tr>
+                <tr class="celdas texto-c-oscuro">
+                    <td>Veterinario</td>
+                    <td>ID, nombre, apellido, especialidad.</td>
+                    <td>Representa al personal médico.</td>
+                </tr>
+                <tr class="lb celdas fondo-gris texto-c-oscuro">
+                    <td>Citas</td>
+                    <td>ID, fecha, estado, motivo y precio</td>
+                    <td>Controla las consultas programadas o realizadas.</td>
+                </tr>
+                <tr class="celdas texto-c-oscuro">
+                    <td>Tratamiento</td>
+                    <td>ID, nombre, descripción, duración, 
+                        fecha de inicio y fin, estado y costo
+                    </td>
+                    <td>Controlar tratamientos médicos.</td>
+                </tr>
+            </table>
+        </div>
+
+    </section>
+
+
+    <section id="Consultas">
+        <div class="desc-queries titulo-redondeado-arriba">
+            <h1 class="texto-blanco">Consultas y Scripts SQL </h1>
+        </div>
+        <!--Consulta 1-->
+        <div class="queries">
+            <h3> 1. Registros de la entidad principal ordenados alfabéticamente </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT * FROM mascotas
+ORDER BY nombre_mascota ASC;
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>id_mascota</td>
+                    <td>nombre_mascota</td>
+                    <td>especie</td>
+                    <td>raza</td>
+                    <td>edad</td>
+                    <td>id_propietario</td>
+                </tr>
+                <tr>
+                    <td>46</td>
+                    <td>Akira</td>
+                    <td>Perro</td>
+                    <td>Akita Inu</td>
+                    <td>4</td>
+                    <td>37</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 2-->
+
+        <div class="queries">
+            <h3> 2. Registro específico filtrando por un campo de texto y cláusula WHERE</h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT * FROM propietarios 
+WHERE nombre_propietario LIKE '%Norma%';
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>id_propietario</td>
+                    <td>nombre_propietario</td>
+                    <td>apellido_propietario</td>
+                    <td>telefono_propietario</td>
+                    <td>correo_propietario</td>
+                    <td>direccion_propietario</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Norma</td>
+                    <td>Roca</td>
+                    <td>39955798</td>
+                    <td>norma.ipg@email.com</td>
+                    <td>Avenida Santa Teresa 4-15</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 3-->
+
+        <div class="queries">
+            <h3> 3. Registro que cumpla una condición numérica</h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT id_antibiotico, nombre_antibiotico, stock_antibiotico
+FROM antibioticos
+WHERE stock_antibiotico < 50;
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>id_antibiotico</td>
+                    <td>nombre_antibiotico</td>
+                    <td>stock_antibiotico</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Vancomicina</td>
+                    <td>40</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 4-->
+
+        <div class="queries">
+            <h3> 4.Mascotas agrupadas por especie </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT especie, COUNT(*) AS total_por_especie
+FROM mascotas 
+GROUP BY especie;
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>especie</td>
+                    <td>total_por_especie</td>
+                </tr>
+                <tr>
+                <td>Perro</td>
+                <td>23</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 5-->
+
+        <div class="queries">
+            <h3> 5.Citas programadas para una fecha </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT id_mascota, id_propietario, fecha_cita, estado_cita 
+FROM citas
+WHERE fecha_cita BETWEEN '2026-04-01' AND '2026-04-30';
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>id_mascota</td>
+                    <td>id_propietario</td>
+                    <td>fecha_cita</td>
+                    <td>estado_cita</td>
+                </tr>
+                <tr>
+                <td>32</td>
+                <td>32</td>
+                <td>2026-04-01</td>
+                <td>Confirmada</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 6-->
+
+        <div class="queries">
+            <h3> 6.Propietarios con más de una mascota agregada </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+Select id_propietario, COUNT(*) AS total_mascotas
+FROM mascotas 
+GROUP BY id_propietario;    
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>id_propietario</td>
+                    <td>total_mascotas</td>
+                </tr>
+                <tr>
+                <td>20</td>
+                <td>3</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 7-->
+
+        <div class="queries">
+            <h3> 7.Cita con nombre de la mascota, propietario y veterinario </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT 
+    citas.id_cita,
+    mascotas.nombre_mascota AS mascota,
+    propietarios.nombre_propietario AS propietario,
+    veterinarios.nombre_veterinario AS veterinario,
+    citas.fecha_cita
+FROM citas
+INNER JOIN mascotas 
+    ON citas.id_mascota = mascotas.id_mascota
+INNER JOIN propietarios 
+    ON mascotas.id_propietario = propietarios.id_propietario
+INNER JOIN veterinarios 
+    ON citas.id_veterinario = veterinarios.id_veterinario;
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>id_cita</td>
+                    <td>mascota</td>
+                    <td>propietario</td>
+                    <td>veterinario</td>
+                    <td>fecha_cita</td>
+                </tr>
+                <tr>
+                <td>1</td>
+                <td>Rufo</td>
+                <td>Geraldine</td>
+                <td>Ana</td>
+                <td>2026-03-01</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 8-->
+
+        <div class="queries">
+            <h3> 8. Tratamientos aplicados a cada mascota con su fecha </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT
+    mascotas.nombre_mascota AS mascota,
+    tratamiento.descripcion_tratamiento,
+    tratamiento.fecha_inicio,
+    tratamiento.fecha_fin
+FROM tratamiento
+INNER JOIN mascotas
+    ON tratamiento.id_mascota = mascotas.id_mascota;
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>mascota</td>
+                    <td>descripcion_tratamiento</td>
+                    <td>fecha_inicio</td>
+                    <td>fecha_fin</td>
+                </tr>
+                <tr>
+                <td>Rufo</td>
+                <td>Control de infección respiratoria</td>
+                <td>2026-01-02 00:00:00</td>
+                <td>2026-01-09 00:00:00</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <!--Consulta 9-->
+
+        <div class="queries">
+            <h3> 9. Reporte de actividad de cada veterinario </h3>
+            <div class="code-queries">
+            <pre>
+            <code class="language-sql">
+SELECT
+    veterinarios.nombre_veterinario AS veterinario,
+    COUNT(DISTINCT citas.id_cita) AS citas_atendidas,
+    COUNT(DISTINCT tratamiento.id_tratamiento) AS tratamientos_aplicados,
+    COUNT(DISTINCT citas.id_mascota) AS mascotas_distintas
+FROM veterinarios
+LEFT JOIN citas
+    ON veterinarios.id_veterinario = citas.id_veterinario
+LEFT JOIN tratamiento
+    ON veterinarios.id_veterinario = tratamiento.id_veterinario
+GROUP BY veterinarios.nombre_veterinario; 
+            </code>
+            </pre>
+            <h4 class="texto-gris-oscuro">Resultados de la consulta: </h4>
+            <table>
+                <tr class="encabezado">
+                    <td>veterinario</td>
+                    <td>citas_atendidas</td>
+                    <td>tratamientos_aplicados</td>
+                    <td>mascotas_distintas</td>
+                </tr>
+                <tr>
+                <td>Ana</td>
+                <td>13</td>
+                <td>13</td>
+                <td>13</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="pseudocodigo">
+        <div class="pseudocodigo">
+            <h1>Diagrama de flujo y Pseudocódigo</h1>
+            <p>A continuación se muestra una simulación del proceso de registro de citas desarrollado <br>
+                en Pseudocódigo y su Diagrama de Flujo:
+            </p>
+            <div class="adv">
+                <img src="/img/information-circle-svgrepo-com.png">
+                <span >Mueve el cursor sobre la imagen para acercar</span>
+            </div>
+
+        <div class="diagrama-flujo">
+            <img src="/assets/psuedo codigo .svg" alt="Diagrama de Flujo" id="diagrama-f">
+        </div>
+
+            <pre>
+    <span class="pseint-titulo">< / > PseInt</span>
+                <code class="language-javascript">
+Algoritmo RegistroCitasVeterinaria
+// 1. Definición de variables
+    Definir opcion_menu, edad, id_sala Como Entero;
+    Definir nombre_mascota, especie, raza, nombre_prop, apellido_prop Como Cadena;
+    Definir telefono_prop, correo_prop, direccion_prop, nombre_vet, fecha_cita Como Cadena;
+    Definir costo_base, costo_total, descuento Como Real;
+    Definir es_nueva Como Logico;
+// Definimos un costo base imaginario para la consulta
+costo_base <- 200.00;
+Repetir
+// 1. Menú de mascota
+    Escribir '=== MENÚ PRINCIPAL ===';
+    Escribir '1. Registrar Mascota Nueva';
+    Escribir '2. Mascota ya registrada';
+    Escribir '3. Salir del sistema';
+    Escribir 'Seleccione una opción: ';
+Leer opcion_menu;
+Si (opcion_menu = 1) O (opcion_menu = 2) Entonces
+// 1.1 Opción Mascota Nueva
+  Si opcion_menu=1 Entonces
+    es_nueva <- Verdadero;
+    Escribir '--- Registro de Mascota Nueva ---';
+    Escribir 'Ingrese nombre de la mascota: ';
+    Leer nombre_mascota;
+    Escribir 'Ingrese especie (perro, gato, etc.): ';
+    Leer especie;
+    Escribir 'Ingrese raza: ';
+    Leer raza;
+    Escribir 'Ingrese edad: ';
+    Leer edad;
+    Escribir 'Ingrese nombre del propietario: ';
+    Leer nombre_prop;
+    Escribir 'Ingrese apellido del propietario: ';
+    Leer apellido_prop;
+    Escribir 'Ingrese teléfono del propietario: ';
+    Leer telefono_prop;
+    Escribir 'Ingrese correo (opcional): ';
+    Leer correo_prop;
+    Escribir 'Ingrese dirección: ';
+    Leer direccion_prop;
+    // 1.2 Opción Mascota ya Registrada
+  SiNo
+    es_nueva <- Falso;
+    Escribir '--- Mascota Ya Registrada ---';
+    Escribir 'Ingrese nombre de la mascota: ';
+    Leer nombre_mascota;
+    // Se asume que el propietario ya existe en base de datos
+    nombre_prop <- 'Cliente Frecuente (Registrado)';
+FinSi
+// 2. Creación de cita
+Escribir '--- Datos de la Cita ---';
+Escribir 'Ingrese nombre del veterinario: ';
+Leer nombre_vet;
+Escribir 'Ingrese fecha de la cita (Ej. 28/05/2026): ';
+Leer fecha_cita;
+// Ciclo para validar el ID de la sala (1 a 50)
+Repetir
+    Escribir 'Ingrese ID de la sala de consultorio (1 a 50): ';
+    Leer id_sala;
+    Si (id_sala< 1) o (id_sala>50) Entonces
+    Escribir 'Error: La sala debe estar entre 1 y 50. Intente de nuevo.';
+    FinSi
+Hasta Que id_sala>=1 Y id_sala<=50
+// Cálculo del costo con condicional para el descuento del 10 MOD
+Si es_nueva=Verdadero Entonces
+    descuento <- costo_base*0.10;
+    costo_total <- costo_base-descuento;
+    Escribir '¡Se ha aplicado un descuento del 10% por mascota nueva!';
+SiNo
+    costo_total <- costo_base;
+FinSi
+// 3. Confirmación de cita
+Escribir '===================================';
+Escribir '       CONFIRMACIÓN DE CITA        ';
+Escribir '===================================';
+Escribir 'Nombre mascota: ', nombre_mascota;
+Escribir 'Propietario: ', nombre_prop;
+Escribir 'Veterinario: ', nombre_vet;
+Escribir 'Sala asignada: Consultorio ', id_sala;
+Escribir 'Fecha de la cita: ', fecha_cita;
+Escribir 'Costo total a pagar: Q', costo_total;
+Escribir '===================================';
+Escribir ''; // Salto de línea para estética
+SiNo
+Si opcion_menu<>3 Entonces 
+    Escribir 'Opción inválida. Por favor, seleccione 1, 2 o 3.';
+FinSi
+FinSi
+Hasta Que opcion=3
+Escribir 'Saliendo del sistema...';
+FinAlgoritmo
+                </code>
+            </pre>
+        </div>
+    </section>
+
+     <Footer>
+        <div class="footer-info">
+            <div class="footer-nav">
+                <h3><b>Pawly</b></h3>
+                    <a href="servicios.html">Servicios</a>
+                    <a href="nuestro-equipo.html">Nuestro Equipo</a>
+            </div>
+            <div class="footer-contact">
+                <h3><b>Contacto</b></h3>
+                    <a href=" https://wa.me.">5540-6830</a>
+                    <a href="mailto:ejemplo@correo.com"">pawlysupport@gmail.com</a>
+            </div>   
+        </div>
+            <p class="copyright-text"> &copy;  Pawly  <span id="year"> </span>. Todos los derechos reservados. ISC - 004 | 
+                Universidad Mariano Gálvez de Guatemala
+            </p>
+     </Footer>
+
+
+     <script src="js/script.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
+    <script>
+    hljs.highlightAll();
+    </script>
+
+
+</body>
+</html>
